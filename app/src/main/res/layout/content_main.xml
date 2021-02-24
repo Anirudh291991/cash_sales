@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/content_main">
+
+    <FrameLayout
+        android:id="@+id/main_frame"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/footer"/>
+
+    <LinearLayout
+        android:id="@+id/footer"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_60sdp"
+        android:layout_alignParentBottom="true"
+        android:weightSum="1"
+        android:background="@drawable/footer_shadow"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/footer_home"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_weight="0.25">
+            <TextView
+                android:id="@+id/iconhome"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/font_awesome_home"
+                android:fontFamily="@font/avenir_next_ltpro_demi"
+                android:textColor="@color/purple_500"
+                android:textSize="@dimen/_20sdp" />
+            <TextView
+                android:id="@+id/tvhome"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/home"
+                android:fontFamily="@font/avenir_next_ltpro_demi"
+                android:textColor="@color/purple_500"
+                android:layout_marginTop="@dimen/_1sdp"
+                android:textSize="@dimen/_14sdp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/footer_report"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_weight="0.25">
+            <TextView
+                android:id="@+id/iconreport"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/font_awesome_report"
+                android:fontFamily="@font/avenir_next_ltpro_demi"
+                android:textColor="@color/text_color"
+                android:textSize="@dimen/_20sdp" />
+            <TextView
+                android:id="@+id/tvreport"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/reports"
+                android:fontFamily="@font/avenir_next_ltpro_demi"
+                android:textColor="@color/text_color"
+                android:layout_marginTop="@dimen/_1sdp"
+                android:textSize="@dimen/_14sdp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/footer_support"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_weight="0.25">
+            <TextView
+                android:id="@+id/iconsupport"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/avenir_next_ltpro_demi"
+                android:text="@string/font_awesome_support"
+                android:textColor="@color/text_color"
+                android:textSize="@dimen/_20sdp" />
+            <TextView
+                android:id="@+id/tvsupport"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/support"
+                android:fontFamily="@font/avenir_next_ltpro_demi"
+                android:textColor="@color/text_color"
+                android:layout_marginTop="@dimen/_1sdp"
+                android:textSize="@dimen/_14sdp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/footer_settings"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_weight="0.25">
+            <TextView
+                android:id="@+id/iconsettings"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/font_awesome_settings"
+                android:textColor="@color/text_color"
+                android:fontFamily="@font/avenir_next_ltpro_demi"
+                android:textSize="@dimen/_20sdp" />
+            <TextView
+                android:id="@+id/tvsettings"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/settings"
+                android:textColor="@color/text_color"
+                android:layout_marginTop="@dimen/_1sdp"
+                android:fontFamily="@font/avenir_next_ltpro_demi"
+                android:textSize="@dimen/_14sdp" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>
